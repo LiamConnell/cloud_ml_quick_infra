@@ -1,0 +1,17 @@
+---
+
+- hosts: all
+  become: yes
+  # roles:
+  #   - base
+
+  tasks:
+    - name: Test
+      command: touch test.txt
+
+
+
+    - name: Get Repo
+      git:
+        repo: 'https://github.com/LiamConnell/notebook_demos.git'
+        dest: ~/notebook_demos
