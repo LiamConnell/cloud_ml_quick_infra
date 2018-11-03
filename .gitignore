@@ -1,0 +1,6 @@
+dns_address.txt
+eip_address.txt
+ip_address.txt
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
