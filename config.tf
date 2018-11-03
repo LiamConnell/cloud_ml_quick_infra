@@ -33,7 +33,7 @@ resource "aws_eip" "ip" {
 
 resource "aws_instance" "example" {
   ami           = "ami-0231c1de0d92fe7a2"
-  instance_type = "t3.small"
+  instance_type = "${var.instance_type}"
   vpc_security_group_ids	= [
 		"${aws_security_group.allow_all.id}"
 			]
